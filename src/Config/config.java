@@ -12,7 +12,7 @@ public class config {
         Connection con = null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/ska_db", "root", "passw0rd");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/ska_db", "root", "");
         }catch (Exception ex){
             System.out.println(ex.getMessage());
         }

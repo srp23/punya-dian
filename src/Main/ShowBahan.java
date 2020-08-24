@@ -5,6 +5,7 @@
  */
 package Main;
 
+import Main.Home;
 import static java.awt.image.ImageObserver.HEIGHT;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -66,6 +67,7 @@ public class ShowBahan extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         ex_bahan_tabel = new javax.swing.JTable();
         ex_bahan_batal = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -101,15 +103,25 @@ public class ShowBahan extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Batal");
+
         javax.swing.GroupLayout ex_bahan_batalLayout = new javax.swing.GroupLayout(ex_bahan_batal);
         ex_bahan_batal.setLayout(ex_bahan_batalLayout);
         ex_bahan_batalLayout.setHorizontalGroup(
             ex_bahan_batalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
+            .addGroup(ex_bahan_batalLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel2)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         ex_bahan_batalLayout.setVerticalGroup(
             ex_bahan_batalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
+            .addGroup(ex_bahan_batalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -208,6 +220,7 @@ public class ShowBahan extends javax.swing.JFrame {
     private javax.swing.JPanel ex_bahan_batal;
     private javax.swing.JTable ex_bahan_tabel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables

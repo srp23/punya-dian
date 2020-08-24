@@ -45,15 +45,16 @@ public class Login1 extends javax.swing.JFrame {
                             dispose();
                         }
                         else if (akses.equals("produksi")){
-                            BagBelakang bg = new BagBelakang();
-                            bg.show();
+                            
+                            Produksi pd = new Produksi();
+                            pd.show();
 //                            this.setVisible(true);
                             dispose();
                         }
                         
                         else if (akses.equals("gudang")){
-                            BagBelakang bg = new BagBelakang();
-                            bg.show();
+                            Gudang gd = new Gudang();
+                            gd.show();
 //                            this.setVisible(true);
                             dispose();
                         }

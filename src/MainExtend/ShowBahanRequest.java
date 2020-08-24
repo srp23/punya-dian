@@ -5,7 +5,7 @@
  */
 package MainExtend;
 
-import Main.BagBelakang;
+import Main.Gudang;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,7 +22,8 @@ public class ShowBahanRequest extends javax.swing.JFrame {
     PreparedStatement ps;
     ResultSet rs;
     private DefaultTableModel tableExrequest;
-    public BagBelakang bgbelakang = null;
+    public Gudang bgbelakang = null;
+    
     
     public ShowBahanRequest() {
         initComponents();
