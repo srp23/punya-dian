@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="12334de1-8d84-4235-a3e7-5628559b7678">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="tgl" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from order_produk
+where tgl_order LIKE '%$P!{tgl}%']]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_order" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_target" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_selesai" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty_jadi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="117" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="f5b64bf0-976b-4dd9-9ca0-8c99db5e6b20" x="209" y="14" width="281" height="33"/>
+				<textElement>
+					<font size="22" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[PT. SETIA KAWAN ABADI]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d18e55f3-5179-4ced-8082-31dcdce51560" x="0" y="113" width="555" height="2"/>
+			</line>
+			<staticText>
+				<reportElement uuid="ebc18da1-a82a-43c5-b4ad-56087df6e105" x="286" y="88" width="124" height="20"/>
+				<textElement/>
+				<text><![CDATA[Telp. (021) 29031010]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b08efe95-3246-4f61-83c5-9f76e60ff666" x="174" y="47" width="370" height="20"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Jl. Daan Mogot KM.10 No.46, RT.6/RW.3, Kedaung Kali Angke, Cengkareng, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9cd8e82e-61a0-4f05-8373-119cb736ca2a" x="216" y="67" width="274" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11710]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="1bb58401-3efa-460c-8f22-7698fa131da3" x="-1" y="0" width="141" height="108"/>
+				<imageExpression><![CDATA["logo_ska.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="74" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="eee6fc0f-ab49-428c-ad70-e4f1ebbd4626" x="78" y="49" width="121" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Produk Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bf551c30-e421-48d8-a2af-8b7844bfaf64" x="423" y="49" width="132" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Permintaan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c3b7bbe0-2b77-4c7a-a9e1-d2687cde1c3e" x="203" y="49" width="79" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="8542c175-6921-4cfe-93ac-3b57ec74c3fa" x="0" y="71" width="555" height="1" forecolor="#000000"/>
+			</line>
+			<staticText>
+				<reportElement uuid="42a61a7e-cf0b-4218-bb59-9c8f56bc0530" x="0" y="49" width="74" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="524e46d1-0c66-4191-b362-a7ef54ece002" x="0" y="5" width="231" height="24" forecolor="#000000"/>
+				<textElement>
+					<font size="18" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Data Permintaan Produksi]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="5ec611a8-7ece-400e-8946-9ad3eaebee67" x="0" y="44" width="555" height="1" forecolor="#000000"/>
+			</line>
+			<staticText>
+				<reportElement uuid="c3b7bbe0-2b77-4c7a-a9e1-d2687cde1c3e" x="286" y="49" width="53" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c3b7bbe0-2b77-4c7a-a9e1-d2687cde1c3e" x="344" y="49" width="73" height="20" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Satuan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="2" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement uuid="0c92a38e-95f7-496a-954d-b4c84259b002" x="2" y="0" width="72" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="094b1654-9b64-4ef0-8cb9-0194f5078ef6" x="78" y="0" width="121" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7ce03110-4f29-4dd7-9f10-ab505be91892" x="203" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{jenis_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="85833abb-88df-4853-847f-be87069c5e7c" x="286" y="0" width="53" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ec26eda1-fceb-4a20-b136-9b2bdffa4f28" x="344" y="0" width="73" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{satuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8b0330c5-8f58-4f12-a076-31a5d6245d55" x="423" y="0" width="132" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tgl_order}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="6c472508-a322-472b-88cf-59d2028e0d33" x="435" y="3" width="119" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="333832e3-19d0-4528-b20d-ff21e23e787d" x="411" y="92" width="89" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[( Eka Darmawan )]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9b0bccd-4304-4925-a4a3-00d0aae29b2f" x="364" y="3" width="71" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jakarta Barat,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8d511823-2057-477e-887e-900e5e59a58f" x="423" y="72" width="66" height="20"/>
+				<textElement/>
+				<text><![CDATA[Mengetahui,]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement uuid="97a592de-8961-43dd-9f58-d6229fa53d22" x="276" y="1" width="22" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="12" splitType="Stretch"/>
+	</summary>
+</jasperReport>

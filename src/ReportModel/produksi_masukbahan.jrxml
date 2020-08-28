@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9723b382-de51-468c-b9b7-c91beeda9275">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select order_bahan.*, item_po_bahan.*
+from order_bahan INNER JOIN item_po_bahan
+ON order_bahan.id=item_po_bahan.id_order_bahan]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_supplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_supplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_item" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_item" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_terima" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_order_bahan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_bahan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_bahan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qty_item" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="f5b64bf0-976b-4dd9-9ca0-8c99db5e6b20" x="267" y="10" width="281" height="33"/>
+				<textElement>
+					<font size="22" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[PT. SETIA KAWAN ABADI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b08efe95-3246-4f61-83c5-9f76e60ff666" x="232" y="43" width="370" height="20"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Jl. Daan Mogot KM.10 No.46, RT.6/RW.3, Kedaung Kali Angke, Cengkareng, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9cd8e82e-61a0-4f05-8373-119cb736ca2a" x="274" y="63" width="274" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11710]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="9c7e3972-f779-406a-8d29-e314f3e02b6a" x="0" y="0" width="150" height="106"/>
+				<imageExpression><![CDATA["C:\\Users\\psw\\Pictures\\New folder\\logo_ska_report.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="ebc18da1-a82a-43c5-b4ad-56087df6e105" x="344" y="84" width="124" height="20"/>
+				<textElement/>
+				<text><![CDATA[Telp. (021) 29031010]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d18e55f3-5179-4ced-8082-31dcdce51560" x="0" y="110" width="802" height="2"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8cef947f-6a7e-465a-9e3a-6c14a376f368" x="0" y="5" width="250" height="26"/>
+				<textElement>
+					<font size="20" isBold="true" isItalic="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Penerimaan Bahan Masuk]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
